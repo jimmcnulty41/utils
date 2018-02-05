@@ -59,10 +59,9 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  fasd
   compleat
   dircycle
+  gitfast
 )
 
 source $ZSH/oh-my-zsh.sh
