@@ -66,6 +66,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+bindkey "^[[A" history-search-backward
+
+bindkey "^[[B" history-search-forward
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -94,3 +97,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+ECA="10.10.252.75"
+EDA="10.10.252.6"
+
+alias replace-portal='sudo ~/Code/depot/build/tools/replace-component -c exportal examf exconfig --host'
+
+alias debug-host='~/Code/depot-ui/tools/debug_host'
+alias ekey='~/Code/engtools/ekey'
+
+alias dockerReset='sudo docker stop $(docker ps -q)'
+alias ngdu='cd ~/Code/depot-ui;./tools/docker/enter-container.sh'
+alias gdu='cd ~/Code/depot-ui;docker attach $(docker ps -q)'
+alias gh='cd ~/Code/depot-ui'
+alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
+alias pull='git pull;git submodule update'
+alias replace-htmlgui-on-mcnulty='~/Code/depot/build/tools/replace-component -c htmlgui --host mcnulty-eca.lab'
+alias zzz='i3lock'
+

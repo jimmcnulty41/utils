@@ -5,7 +5,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 chsh -s $(which zsh)
 ln -s $(pwd) ~/.oh-my-zsh/themes/agnoster-fcamblor.zsh-theme
 sudo apt-get install fonts-powerline
-eval "$(fasd --init)"
 cp .zshrc ~/.zshrc
 
 
