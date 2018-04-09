@@ -1,0 +1,1 @@
+echo "alias newextension=\"cp -R ~/Code/Samples/CEP_HTML_Test_Extension $1\"" >>~/.bashrc
