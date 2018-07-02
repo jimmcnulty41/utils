@@ -7,7 +7,7 @@
 #
 
 # Allow bashrc to be used
-bash -c '. ~/.bashrc'
+emulate bash -c '. ~/.bashrc'
 #. /usr/share/autojump/autojump.sh
 
 # Path to your oh-my-zsh installation.
