@@ -1,1 +1,1 @@
-kill $(ps -A | grep $1 | awk '{print $1}' | grep -v PID)
+pgrep $1 | xargs kill
