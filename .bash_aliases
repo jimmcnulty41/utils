@@ -1,4 +1,5 @@
 alias cd='echo "use j instead of cd"; cd'
+alias g='git'
 
 # volume control
 vol() {
