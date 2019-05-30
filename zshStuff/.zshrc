@@ -42,6 +42,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.named_history
 
 bindkey "^[[A" history-search-backward
 
