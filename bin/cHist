@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+name=$1
+cat ~/.named_history | grep -vE "alias $name" > ~/.named_history
+exec zsh
+

@@ -33,6 +33,5 @@ bindkey "^[[A" history-search-backward
 
 bindkey "^[[B" history-search-forward
 
-alias zup='cp .zshrc ~/.zshrc'
-
-export PATH=$(pwd)/bin:$PATH
+export JIM_UTILS=$(cat $HOME/.jim_utils_dir)
+export PATH=$JIM_UTILS/bin:$PATH

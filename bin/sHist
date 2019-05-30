@@ -1,0 +1,20 @@
+#!/usr/bin/env zsh
+
+
+name=$1
+
+if [ $1 ]; then
+
+  resolvePaths() {
+    # Get words starting with ./ or ../
+    # call greadlink on them and return that
+  }
+
+  # output the last command entered
+  command=$(cat ~/.zsh_history | tail -n 2 | head -n 1 |  cut -d ";" -f 2- -)
+  resolvedCommand="cd $(pwd) && $command"
+
+  echo "alias $name=\"$resolvedCommand\"" >> ~/.named_history && exec zsh
+else
+  echo "Error: need alias name"
+fi

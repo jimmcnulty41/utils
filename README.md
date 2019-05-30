@@ -6,6 +6,9 @@ Setup **should** be as easy as
 ./init.sh # or mac_init.sh
 ```
 
+This will create a file `.jim_utils_dir`
+In $HOME that points to this root
+
 # Env Vars
 
 The .zshrc file should:
